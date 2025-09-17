@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tlayudas Oaxaqueñas</title>
+    <title>Mi Portafolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -15,26 +15,115 @@
 
 </head>
 
-<header><!--Cabecera-->
-    <div style="text-align: center; font-size: 50;">
-        <h1 style="color: rgb(174, 28, 28);">"Tlayudas Oaxaqueñas"</h1>
-        <img src=".\img\tlayudasIntro.jpg"
-            alt="Una Tlayuda que se ve bien rica" height="250px"
-            width="400">
 
-        <nav>
-            <h3>Barra de Navegación</h3> <!--EL navegador -->
-            <div>
-                <a href="#Inicio">Inicio</a><br>
-                <a href="#Galería">Galería</a><br>
-                <a href="#Contacto">Contacto</a><br>
+
+<body style="background: linear-gradient(rgb(255, 214, 152), rgb(178, 117, 57), rgb(119, 80, 7));">
+
+    <header><!--Cabecera-->
+        <div style="text-align: center; font-size: 50;">
+            <h1 style="color: rgb(174, 28, 28);">"Mi Portafolio"</h1>
+            <img src=".\img\yo.jpg" alt="Una foto mia" height="350px" width="500">
+
+            <nav>
+                <h3>Barra de Navegación</h3> <!--EL navegador -->
+                <div>
+                    <a href="#Inicio">Inicio</a><br>
+                    <a href="#Galería">Galería</a><br>
+                    <a href="#Contacto">Contacto</a><br>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="Inicio">
+            <div style="text-align: center; font-size: 50;">
+                <h2>¡Hola! Soy Carlos Antonio López Prieto</h2>
+                <p style="font-size: 20px; color: rgb(173, 27, 75);">
+                    Soy una persona apasionada por la tecnología, el aprendizaje constante y la creatividad. Me gusta
+                    explorar nuevas ideas y compartir conocimientos con los demás.
+                </p>
+                <ul style="font-size: 18px; color: rgb(48, 36, 15); text-align: left; display: inline-block;">
+                    <li>Matematico</li>
+                    <li>Inteligencia artificial</li>
+                    <li>Música</li>
+                    <li>Ajedrez (Campeón de mi escuela)</li>
+                    <li>Viajar y conocer nuevas culturas</li><br </ul>
+
+                    <img src=".\img\chess.jpg" alt="Yo ganando el torneo de ajedrez" width="500px" height="250px">
             </div>
-        </nav>
-    </div>
-</header>
+        </section>
 
-<body>
+        <section id="Galería"></section>
+        <div
+            style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; justify-items: center; margin: 40px 0;">
+            <figure>
+                <img src="./img/amigos.jpg" alt="Con amigos" width="250" height="170">
+                <figcaption>Con amigos y compañeros</figcaption>
+            </figure>
+            <figure>
+                <img src="./img/mascota.jpg" alt="Con mi mascota" width="250" height="170">
+                <figcaption>Mi mascota</figcaption>
+            </figure>
+            <figure>
+                <img src="./img/ipn.jpg" alt="Con los Burros del IPN" width="250" height="170">
+                <figcaption>En el IPN</figcaption>
+            </figure>
+        </div>
 
+        <div style="text-align: center; margin-top: 40px;">
+            <h2>Video Favorito</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wrv5eR7g8NA"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;"></div>
+            <h2>Audio gratis:</h2>
+            <audio controls>
+                <source src="./audio/music.mp3" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+        </div>
+        </section>
+
+        <section id="Contacto">
+            <h2>Contacto</h2>
+            <form action="#" method="post" style="max-width: 400px; margin: 0 auto; background: #fff3e0; padding: 20px; border-radius: 8px;">
+                <div style="margin-bottom: 15px;">
+                    <label for="nombre" style="display: block; margin-bottom: 5px;">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required style="width: 100%; padding: 8px;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label for="email" style="display: block; margin-bottom: 5px;">Email:</label>
+                    <input type="email" id="email" name="email" required style="width: 100%; padding: 8px;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label for="mensaje" style="display: block; margin-bottom: 5px;">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required style="width: 100%; padding: 8px;"></textarea>
+                </div>
+                <div style="text-align: center;">
+                    <button type="submit" style="padding: 8px 16px; margin-right: 10px;">Enviar</button>
+                    <button type="reset" style="padding: 8px 16px;">Limpiar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer style="background: linear-gradient(90deg, #e0c097 60%, #b27539 100%); color: #4b2e05; text-align: center; padding: 24px 16px; margin-top: 40px; border-radius: 12px; box-shadow: 0 2px 8px rgba(119,80,7,0.12); font-size: 18px;">
+        <div style="margin-bottom: 8px;">
+            <strong>Carlos Antonio López Prieto</strong>
+        </div>
+        <div style="margin-bottom: 8px;">
+            <a href="mailto:lopezcarlosant@email.com" style="color: #7a4a0a; text-decoration: none;">
+                lopezcarlosant@email.com
+            </a>
+        </div>
+        <div>
+            &copy; 2025 &mdash; Todos los derechos reservados por Carlos Antonio López Prieto mejor conocido como "El Capi".
+        </div>
+    </footer>
 </body>
 
 </html>
